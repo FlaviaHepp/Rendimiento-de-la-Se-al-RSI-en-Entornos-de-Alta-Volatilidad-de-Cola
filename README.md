@@ -104,3 +104,49 @@ Recomendado combinar con:
 
 ## 👤Autora
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
+***
+📉 **No todas las señales RSI son iguales… depende del contexto de riesgo**
+
+El RSI > 70 suele interpretarse como señal de sobrecompra.
+Pero en la práctica, muchas de estas señales fallan.
+
+👉 Entonces probé algo distinto:
+¿qué pasa si solo consideramos RSI en **entornos de alto riesgo de cola**?
+
+💡 **Insight clave:**
+Cuando combinamos **RSI > 70** con **kurtosis elevada (> 5)**, la señal se vuelve mucho más potente.
+En estos contextos, las caídas posteriores tienden a ser más pronunciadas.
+
+---
+
+📊 **¿Qué medí?**
+
+* Señales de sobrecompra (RSI > 70)
+* Filtrado por activos con alta kurtosis (riesgo de eventos extremos)
+* Rendimiento promedio a 5 días post-señal
+* Análisis por sector
+
+---
+
+🧠 **¿Cómo interpretarlo?**
+
+* RSI solo → puede generar ruido
+* RSI + alto riesgo de cola → señal más selectiva
+* Mayor kurtosis → mayor probabilidad de movimientos bruscos (incluyendo caídas)
+
+---
+
+⚡ **¿Por qué importa?**
+
+Porque mejora la calidad de las señales:
+
+* Menos falsos positivos
+* Mejor timing en estrategias de reversión
+* Integración de **momentum + distribución de retornos**
+
+---
+
+📌 Pregunta para la comunidad:
+¿Filtran sus indicadores técnicos con métricas de riesgo (como kurtosis o skewness)… o los usan de forma aislada?
+
+#QuantFinance #Trading #DataScience #StockMarket #RSI #RiskManagement #MachineLearning #Analytics
